@@ -1,15 +1,12 @@
 #include <unistd.h>
 #include <stdlib.h>
-
-int main(void) {
-    char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-    ssize_t bytes_written = write(2, message, 59);
-
-    if (bytes_written == -1) {
-        return 1;
-    }
-
-    return 1; 
+/**
+ * main - Entry point
+ *
+ * Return: Always 1 (success)
+ */
+int main(void)
+{
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
-
