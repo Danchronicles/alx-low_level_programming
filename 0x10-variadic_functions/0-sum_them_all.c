@@ -7,9 +7,8 @@
  */
 int sum_them_all(const unsigned int n, ...);
 int main (void){
-int sum;
-sum = sum_them_all(5,1,2,3,4,5);
-printf("%d\n", sum);
+	sum_them_all(5,1,2,3,4,5);
+puts("the sum is:");
 return (0);
 }
 int sum_them_all(const unsigned int n, ...){
