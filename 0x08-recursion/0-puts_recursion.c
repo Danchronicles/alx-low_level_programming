@@ -5,18 +5,12 @@
  *
  * Return: 0 (success)
  */
-void _puts_recursion(char *s);
-int main (void){
-char str[] = "Hello, World!";
- _puts_recursion(str);
- return(0);
-}
 void _puts_recursion(char *s){
-if(*s == '\0')
+	if(*s == '\0')
 {
 	putchar('\n');
+	return;
 }
-return;
 putchar(*s);
-_puts_recursion(s + 1);
+s++;
 }
